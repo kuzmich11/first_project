@@ -1,0 +1,357 @@
+:root {
+    --black: #222222;
+    --gray: #F1E4E6;
+    --pink: #F16D7F;
+    --white: #FFFFFF;
+    --dark-white: #FBFBFB;
+    }
+
+body {
+    background-color: var(--white);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    }
+
+.header {
+    background-color: var(--black);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header__logo-icon {
+    width: 44px;
+    height: 38px;
+    margin: 0 41px 0 0;  
+}
+
+.header__search-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.header__burger-icon {
+    width: 32px;
+    height: 23px;
+    margin: 0 33px 0 0;
+    border: none;
+    background-color: transparent;
+}
+
+.header__profile-icon {
+    width: 29px;
+    height: 29px;
+    margin: 0 33px 0 0;
+}
+
+.header__cart-icon {
+    width: 32px;
+    height: 29px;
+}
+
+.header-menu {
+    display: none;
+}
+
+.hero {
+    background-color: var(--gray);
+    
+}
+.hero_container {
+    display: flex;
+    align-items: center;
+}
+.hero__img {
+    margin-left: -230px;
+    width: 800px;
+    height: 764px;
+}
+
+.hero__title {
+    margin-left: 92px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.hero__subtitle {
+    display: block;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px; 
+}
+
+.hero__pink {
+    color: var(--pink);
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px; 
+}
+
+.sale {
+    margin-top: 65px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.sale__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sale__item {
+    width: 360px;
+    height: 260px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale__women {
+    background-image: url(../img/for_women.jpg);
+}
+
+.sale__link {
+    text-decoration: none;
+}
+.sale__text {
+    text-transform: uppercase;
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.sale__subtitle {
+    text-transform: uppercase;
+    color: var(--pink);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.sale__men {
+    background-image: url(../img/for_men.jpg);
+}
+
+.sale__kids {
+    background-image: url(../img/for_kids.jpg);
+}
+
+.sale__accesories {
+    width: 1140px;
+    height: 180px;
+    margin-top: 30px;
+    background-image: url(../img/accesories.jpg);
+}
+
+.catalog {
+    margin-top: 96px;
+    margin-bottom: 110px;
+    text-align: center;
+}
+
+.catalog__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    color: var(--black);
+}
+
+.catalog__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--black);
+}
+
+.catalog__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.catalog__item {
+    width: 360px;
+    height: 581px;
+    text-align: left;
+    background-color: #F8F8F8;
+    margin-bottom: 30px;
+}
+
+.catalog__link {
+    text-decoration: none;
+}
+
+.catalog__subtitle {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 25px 0 12px 18px;
+    color: #000000;
+}
+
+.catalog__description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 0 25px 0 18px;
+}
+
+.catalog__price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin: 18px 0 0 18px;
+    color: var(--pink);
+}
+
+.catalog__button {
+    text-decoration: none;
+    width: 211px;
+    height: 47px;
+    padding: 14px 38px;
+    border: 1px solid var(--pink);
+    margin-top: 65px;
+    background-color: var(--white);
+}
+
+.service {
+    background-color: var(--black);
+}
+
+.service__list {
+    height: 341px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__item {
+    text-align: center;
+    width: 360px;
+    height: 134px;
+}
+
+.service__img {
+    width: 45px;
+    height: 32px;
+}
+
+.service__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--dark-white);
+    margin: 25px 0 16px 0;
+}
+
+.service__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: var(--dark-white);
+}
+
+.footer__subscribe {
+    min-height: 448px;
+    background-image: url(../img/background_footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.subscribe__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__figure {
+    width: 360px;
+    height: 225px;
+    margin-top: 97px;
+    text-align: center;
+}
+
+.footer__img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 30px;
+}
+
+.footer__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--black);
+}
+.footer__italic {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer__form {
+    width: 557px;
+    height: 142;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.footer__copyright {
+    background-color: var(--black);
+}
+
+.copyright__container {
+    min-height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text_copyright{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--dark-white);
+}
+
+.footer__list {
+    width: 148px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__icon {
+    width: 32px;
+    height: 32px;
+}
