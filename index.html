@@ -28,13 +28,10 @@
                 <button type="button" class="header__burger-icon">
                     <img src="img/burger.svg" alt="menu">
                 </button>
-                <a href="#">
-                    <img class="header__profile-icon" src="img/profile.svg" alt="profile">
-                </a>
-                <a href="#">
-                    <img class="header__cart-icon" src="img/cart.svg" alt="cart">
-                </a>
                 <nav class="header__menu header-menu">
+                    <button class="header-menu__exit" tipe="button">
+                        <img src="img/X.svg" alt="exit">
+                    </button>
                     <ul class="header-menu__list">
                         <h2 class="header-menu__title">
                             menu
@@ -43,16 +40,16 @@
                             <ul class="header-submenu__list">
                                 <h3 class="header-submenu__title">man</h3>
                                 <li class="header-submenu__item">
-                                    <a href=" #">accessories</a>
+                                    <a class="header-submenu__link" href=" #">Accessories</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">bags</a>
+                                    <a class="header-submenu__link" href="#">Bags</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">denim</a>
+                                    <a class="header-submenu__link" href="#">Denim</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">t-shirts</a>
+                                    <a class="header-submenu__link" href="#">T-Shirts</a>
                                 </li>
                             </ul>
                         </li>
@@ -62,19 +59,19 @@
                                     woman
                                 </h3>
                                 <li class="header-submenu__item">
-                                    <a href=" #">accessories</a>
+                                    <a class="header-submenu__link" href=" #">Accessories</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">jackets & coats</a>
+                                    <a class="header-submenu__link" href="#">Jackets & Coats</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">polos</a>
+                                    <a class="header-submenu__link" href="#">Polos</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">t-shirts</a>
+                                    <a class="header-submenu__link" href="#">T-Shirts</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">shirts</a>
+                                    <a class="header-submenu__link" href="#">Shirts</a>
                                 </li>
                             </ul>
                         </li>
@@ -84,33 +81,39 @@
                                     kids
                                 </h3>
                                 <li class="header-submenu__item">
-                                    <a href=" #">accessories</a>
+                                    <a class="header-submenu__link" href=" #">Accessories</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">jackets & coats</a>
+                                    <a class="header-submenu__link" href="#">Jackets & Coats</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">polos</a>
+                                    <a class="header-submenu__link" href="#">Polos</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">t-shirts</a>
+                                    <a class="header-submenu__link" href="#">T-Shirts</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">shirts</a>
+                                    <a class="header-submenu__link" href="#">Shirts</a>
                                 </li>
                                 <li class="header-submenu__item">
-                                    <a href="#">bags</a>
+                                    <a class="header-submenu__link" href="#">Bags</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
+                <a href="#">
+                    <img class="header__profile-icon" src="img/profile.svg" alt="profile">
+                </a>
+                <a href="#">
+                    <img class="header__cart-icon" src="img/cart.svg" alt="cart">
+                </a>
             </div>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container hero_container">
+            <div class="container hero__container">
                 <img class="hero__img" src="img/main_man.png" alt="man">
                 <h1 class="hero__title">the brand <span class="hero__subtitle">of luxerious <span
                             class="hero__pink">fashion</span></span></h1>
@@ -166,8 +169,14 @@
             <p class="catalog__text">Shop for items based on what we featured in this week</p>
             <ul class="catalog__list">
                 <li class="catalog__item">
+                    <img class="catalog__img" src="img/jacket_man.jpg" alt="jacket">
+                    <div class="catalog__alt-img">
+                        <button class="catalog__add-cart">
+                            <img class="catalog__cart" src="img/cart.svg" alt="add to cart">
+                            Add to Cart
+                        </button>
+                    </div>
                     <a class="catalog__link" href="#">
-                        <img class="catalog__img" src="img/jacket_man.jpg" alt="jacket">
                         <h3 class="catalog__subtitle">
                             ellery x m'o capsule
                         </h3>
@@ -177,8 +186,14 @@
                     </a>
                 </li>
                 <li class="catalog__item">
+                    <img class="catalog__img" src="img/suit_woman.jpg" alt="suit">
+                    <div class="catalog__alt-img">
+                        <button class="catalog__add-cart">
+                            <img class="catalog__cart" src="img/cart.svg" alt="add to cart">
+                            Add to Cart
+                        </button>
+                    </div>
                     <a class="catalog__link" href="#">
-                        <img class="catalog__img" src="img/suit_woman.jpg" alt="suit">
                         <h3 class="catalog__subtitle">
                             ellery x m'o capsule
                         </h3>
@@ -188,8 +203,14 @@
                     </a>
                 </li>
                 <li class="catalog__item">
+                    <img class="catalog__img" src="img/shorts_man.jpg" alt="shorts">
+                    <div class="catalog__alt-img">
+                        <button class="catalog__add-cart">
+                            <img class="catalog__cart" src="img/cart.svg" alt="add to cart">
+                            Add to Cart
+                        </button>
+                    </div>
                     <a class="catalog__link" href="#">
-                        <img class="catalog__img" src="img/shorts_man.jpg" alt="shorts">
                         <h3 class="catalog__subtitle">
                             ellery x m'o capsule
                         </h3>
@@ -199,8 +220,14 @@
                     </a>
                 </li>
                 <li class="catalog__item">
+                    <img class="catalog__img" src="img/pants_man.jpg" alt="pants">
+                    <div class="catalog__alt-img">
+                        <button class="catalog__add-cart">
+                            <img class="catalog__cart" src="img/cart.svg" alt="add to cart">
+                            Add to Cart
+                        </button>
+                    </div>
                     <a class="catalog__link" href="#">
-                        <img class="catalog__img" src="img/pants_man.jpg" alt="pants">
                         <h3 class="catalog__subtitle">
                             ellery x m'o capsule
                         </h3>
@@ -210,8 +237,14 @@
                     </a>
                 </li>
                 <li class="catalog__item">
+                    <img class="catalog__img" src="img/jacket_woman.jpg" alt="jacket woman">
+                    <div class="catalog__alt-img">
+                        <button class="catalog__add-cart">
+                            <img class="catalog__cart" src="img/cart.svg" alt="add to cart">
+                            Add to Cart
+                        </button>
+                    </div>
                     <a class="catalog__link" href="#">
-                        <img class="catalog__img" src="img/jacket_woman.jpg" alt="jacket woman">
                         <h3 class="catalog__subtitle">
                             ellery x m'o capsule
                         </h3>
@@ -221,8 +254,15 @@
                     </a>
                 </li>
                 <li class="catalog__item">
+
+                    <img class="catalog__img" src="img/blouse_woman.jpg" alt="blouse">
+                    <div class="catalog__alt-img">
+                        <button class="catalog__add-cart">
+                            <img class="catalog__cart" src="img/cart.svg" alt="add to cart">
+                            Add to Cart
+                        </button>
+                    </div>
                     <a class="catalog__link" href="#">
-                        <img class="catalog__img" src="img/blouse_woman.jpg" alt="blouse">
                         <h3 class="catalog__subtitle">
                             ellery x m'o capsule
                         </h3>
@@ -232,9 +272,9 @@
                     </a>
                 </li>
             </ul>
-            <a class="catalog__button" href="#">
+            <button class="catalog__button" type="button">
                 Browse All Product
-            </a>
+            </button>
         </section>
         <section class="service">
             <h2 class="visually-hidden">service</h2>
@@ -282,40 +322,48 @@
         <section class="footer__subscribe subscribe">
             <h2 class="visually-hidden">subscribe</h2>
             <div class="container subscribe__container">
-                <figure class="footer__figure">
+                <div class="footer__figure">
                     <img class="footer__img" src="img/photo_author.png" alt="photo author">
-                    <figcaption class="footer__text">
+                    <p class="footer__text">
                         “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="footer__italic">a pulvinar
                             purus condimentum“</span>
-                    </figcaption>
-                </figure>
-                <form class="footer__form" action="">здесь будет форма</form>
+                    </p>
+                </div>
+                <form class="footer__form footer-form" action="">
+                    <fieldset>
+                        <legend class="footer-form__title">subscribe
+                            <span class="footer-form__subtitle"> for our newletter and promotion</span>
+                        </legend>
+                        <input class="footer-form__email" type="email" required placeholder="Enter Your Email">
+                        <button class="footer-form__button" type="submit" class="button">Subscribe</button>
+                    </fieldset>
+                </form>
             </div>
         </section>
         <section class="footer__copyright copyright">
             <h2 class="visually-hidden">copyright</h2>
             <div class="container copyright__container">
-                <p class="footer__text_copyright">
+                <p class="copyright__text">
                     © 2021 brand all rights reserved.
                 </p>
                 <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="#">
+                    <li>
+                        <a class="footer__item" href="#">
                             <img class="footer__icon" src="img/facebook_icon.svg" alt="facebook">
                         </a>
                     </li>
-                    <li class="footer__item">
-                        <a href="#">
+                    <li>
+                        <a class="footer__item" href="#">
                             <img class="footer__icon" src="img/instagram_icon.svg" alt="instagram">
                         </a>
-                    </li class="footer__item">
+                    </li>
                     <li>
-                        <a href="#">
+                        <a class="footer__item" href="#">
                             <img class="footer__icon" src="img/pinterest_icon.svg" alt="pinterest">
                         </a>
                     </li>
-                    <li class="footer__item">
-                        <a href="#">
+                    <li>
+                        <a class="footer__item" href="#">
                             <img class="footer__icon" src="img/twitter_icon.svg" alt="twitter">
                         </a>
                     </li>
