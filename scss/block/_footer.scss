@@ -1,0 +1,121 @@
+.footer {
+
+    &__subscribe {
+        min-height: 448px;
+        background-image: url(../img/background_footer.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    &__subscribe-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__figure {
+        width: 360px;
+        height: 225px;
+        margin-top: 97px;
+        text-align: center;
+    }
+
+    &__img {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $black;
+    }
+
+    &__italic {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__form {
+        width: 557px;
+        height: 142px;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    &__copyright {
+        background-color: $black;
+    }
+
+    &__list {
+        width: 148px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 32px;
+        height: 32px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+            &:hover,:focus {
+                background-color: $pink;
+            }
+    }
+}
+
+.footer-form {
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+        text-transform: uppercase;
+        height: 61px;
+        margin-bottom: 32px;
+    }
+    &__subtitle {
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    &__email {
+        width: 322px;
+        height: 49px;
+        border-radius: 25px;
+        border: none;
+        padding-left: 22px;
+        background: #E1E1E1;
+    }
+
+    &__button {
+        width: 100px;
+        height: 49px;
+        border-radius: 0 25px 25px 0;
+        border: none;
+        background: #E05C6E;
+        margin-left: -67px;
+        text-align: center;
+    }
+}
+
+.copyright__container {
+    min-height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $dark-white;
+}
