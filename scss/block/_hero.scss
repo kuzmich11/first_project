@@ -1,0 +1,47 @@
+.hero {
+    background-color: $gray;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        margin-left: -230px;
+        width: 800px;
+        height: 764px;
+    }
+
+    &__title {
+        margin-left: 92px;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 58px;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 12px;
+            height: 92px;
+            position: absolute;
+            top: 5px;
+            left: -28px;
+            background-color: $pink;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 44px; 
+    }
+
+    &__pink {
+        color: $pink;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 44px; 
+    }
+}

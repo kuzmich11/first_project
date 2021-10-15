@@ -19,7 +19,7 @@
     <header class="header">
         <div class="container header-container">
             <div class="header__box-logo">
-                <a href="#">
+                <a href="./index.html">
                     <img class="header__logo-icon" src="img/logo.svg" alt="logo">
                 </a>
                 <img class="header__search-icon" src="img/loupe.svg" alt="loupe">
@@ -118,48 +118,41 @@
             </h1>
         </section>
         <section class="registration container">
+            <h2 class="visually-hidden">Registration</h2>
             <form class="registration__form" action="">
                 <fieldset>
-                    <legend>Choose your favorite monster</legend>
-                    <label for="pass">Пароль</label>
-                    <input class="form-password" type="password" id="pass">
-                    <input type="email" required>
-                    <textarea>
-                    It was a dark and stormy night...
-                    </textarea>
-                    <p>
-                        <input type="tel">
-                    </p>
-                    <fieldset>
-                        <legend>Choose your interests</legend>
-                        <div>
-                            <input type="checkbox" id="coding" name="interest" value="coding" checked>
-                            <label for="coding">Coding</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="music" name="interest" value="music">
-                            <label for="music">Music</label>
-                        </div>
-                    </fieldset>
-                    <input type="submit">
-                    <button type="submit" class="button">отправить</button>
+                    <legend class="registration__text">Your Name</legend>
+                    <label for="first_name" class="visually-hidden">First Name</label>
+                    <input class="registration__input" type="text" id="first_name" placeholder="First Name">
+                    <label for="last_name" class="visually-hidden">Last Name</label>
+                    <input class="registration__input" type="text" id="last_name" placeholder="Last Name">
+                    <div class="registration__gender">
+                        <input class="registration__gender-radio" type="radio" id="male" name="gender">
+                        <label class="registration__gender-lable" for="mail">Mail</label>
+                        <input class="registration__gender-radio" type="radio" id="famale" name="gender">
+                        <label class="registration__gender-lable" for="famale">Famale</label>
+                    </div>
+                    <legend class="registration__text">Login details</legend>
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input class="registration__input" type="email" id="email" placeholder="Email">
+                    <label for="password" class="visually-hidden">Password</label>
+                    <input class="registration__input" type="password" id="password" placeholder="Password">
+                    <p class="registration__hint">Please use 8 or more characters, with at least 1 number and a mixture
+                        of uppercase and lowercase
+                        letters</p>
+                    <button type="submit" class="registration__button">join now</button>
                 </fieldset>
             </form>
-            <div class="promo">
-                <ul>
-                    <h2>LOYALTY HAS ITS PERKS</h2>
-                    <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting
-                        with these as soon as you join:</p>
-                    <li>15% off welcome offer
-                    </li>
-                    <li>Free shipping, returns and exchanges on all orders
-
-                    </li>
-                    <li>$10 off a purchase on your birthday
-
-                    </li>
-                    <li>Early access to products</li>
-                    <li>Exclusive offers & rewards</li>
+            <div class="registration__promo">
+                <h3 class="registration__title">loyalty has its perks</h3>
+                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting
+                    with these as soon as you join:</p>
+                <ul class="registration__list">
+                    <li class="registration__item">15% off welcome offer</li>
+                    <li class="registration__item">Free shipping, returns and exchanges on all orders</li>
+                    <li class="registration__item">$10 off a purchase on your birthday</li>
+                    <li class="registration__item">Early access to products</li>
+                    <li class="registration__item">Exclusive offers & rewards</li>
                 </ul>
             </div>
         </section>

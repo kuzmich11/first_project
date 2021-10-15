@@ -1,0 +1,36 @@
+.service {
+    background-color: $black;
+
+    &__list {
+        height: 341px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        text-align: center;
+        width: 360px;
+        height: 134px;
+    }
+
+    &__img {
+        width: 45px;
+        height: 32px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $dark-white;
+        margin: 25px 0 16px 0;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        color: $dark-white;
+    }
+}

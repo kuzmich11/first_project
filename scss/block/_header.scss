@@ -1,0 +1,96 @@
+.header {
+    background-color: $black;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        min-height: 75px;
+    }
+
+    &__logo-icon {
+        width: 44px;
+        height: 38px;
+        margin: 0 41px 0 0;  
+    }
+
+    &__search-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    &__burger-icon {
+        width: 32px;
+        height: 23px;
+        margin: 0 33px 0 0;
+        border: none;
+        background-color: transparent;
+
+        &:focus +.header-menu {
+            display: block;
+        }
+    }
+
+    &__profile-icon {
+        width: 29px;
+        height: 29px;
+        margin: 0 33px 0 0;
+    }
+
+    &__cart-icon {
+        width: 32px;
+        height: 29px;
+    }
+}
+
+.header-menu {
+    position: absolute;
+    width: 232px;
+    height: 764px;
+    right: 0;
+    top: 75px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    display: none;
+    z-index: 1;
+
+    &__exit {
+        width: 12px;
+        height: 12px;
+        border: none;
+        background-color: transparent;
+        margin: 16px 0 0 203px;
+    }
+
+    &__title {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 9px 0 24px 34px;
+        color: #000000;
+    }
+
+    &:hover {
+        display: block;
+    }
+}
+
+.header-submenu {
+
+    &__title {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 20px 0 12px 33px;
+        color: $pink;
+    }
+
+    &__item {
+        margin: 11px 0 11px 55px;
+        font-weight: 400;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #6F6E6E;
+    }
+}
