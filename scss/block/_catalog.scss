@@ -21,7 +21,6 @@
         display: flex;
         justify-content: space-between;
         margin-top: 48px;
-        margin-bottom: 35px;
         flex-wrap: wrap;
     }
 
@@ -107,13 +106,41 @@
         height: 47px;
         padding: 14px 38px;
         border: 1px solid #FF6A6A;
-        margin-top: 65px;
         background-color: transparent;
         color: #FF6A6A;
+        margin-top: 16px;
 
         &:hover,:focus {
             background-color: $pink;
             color: #FFFFFF;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .catalog {
+        margin-top: 96px;
+        margin-bottom: 65px;
+
+        &__list {
+            margin-top: 72px;
+            margin-bottom: 16px;
+        }
+
+        &__item {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .catalog {
+        margin-top: 64px;
+        margin-bottom: 96px;
+
+        &__list {
+            margin-top: 65px;
+            margin-bottom: 24px;
         }
     }
 }

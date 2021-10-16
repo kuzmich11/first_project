@@ -75,22 +75,39 @@
     }
 }
 
-.header-submenu {
+@media (max-width: 1140px) {
+    .header {
 
-    &__title {
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 20px 0 12px 33px;
-        color: $pink;
+        &__box-logo {
+            margin-left: 16px;
+        }
+
+        &__box-menu {
+            margin-right: 16px;
+        }
     }
+}
 
-    &__item {
-        margin: 11px 0 11px 55px;
-        font-weight: 400;
-    }
+@media (max-width: 767px) {
+    .header {
 
-    &__link {
-        text-decoration: none;
-        color: #6F6E6E;
+        &__box-logo {
+            margin-left: 8px;
+        }
+
+        &__box-menu {
+            margin-right: 8px;
+        }
+
+        &__profile-icon {
+            display: none;
+        }
+        &__cart-icon {
+            display: none;
+        }
+
+        &__burger-icon {
+            margin-right: 0;
+        }
     }
 }

@@ -1,0 +1,20 @@
+
+.header-submenu {
+
+    &__title {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 20px 0 12px 33px;
+        color: $pink;
+    }
+
+    &__item {
+        margin: 11px 0 11px 55px;
+        font-weight: 400;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #6F6E6E;
+    }
+}
