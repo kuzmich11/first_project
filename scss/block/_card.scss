@@ -1,0 +1,78 @@
+.card {
+    height: 600px;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    margin-top: -65px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 130px;
+
+    &__text {
+        @include font (14px, 17px, 300);
+        color: $pink;
+        text-transform: uppercase;
+        margin-top: 64px;
+        margin-bottom: 0;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 63px;
+            height: 3px;
+            position: absolute;
+            top: 29px;
+            left: 36px;
+            background-color: $pink;
+        }
+    }
+
+    &__title {
+        @include font (18px, 22px, 300);
+        color: #4d4d4d;
+        text-transform: uppercase;
+        margin-top: 27px;
+    }
+
+    &__subtext {
+        width: 555px;
+        @include font (14px, 17px, 300);
+        color: #5E5E5E;
+        text-align: center;
+        margin-top: 48px;
+    }
+
+    &__price {
+        @include font (24px, 29px, 300);
+        color: #EF5B70;
+        margin-top: 32px;
+        margin-bottom: 49px;
+    }
+
+    &__line {
+        border: 1px solid #EAEAEA;
+        width: 641px;
+    }
+
+    &__dropdowns {
+        background-color: #fff;
+        color: $black;
+        border: none;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-top: 49px;
+    }
+
+    &__button {
+        text-decoration: none;
+        width: 211px;
+        height: 47px;
+        padding: 14px 38px;
+        border: 1px solid #FF6A6A;
+        background-color: transparent;
+        color: #FF6A6A;
+        margin-top: 40px;    
+    }
+}

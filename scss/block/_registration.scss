@@ -1,6 +1,6 @@
 .registration {
     display: flex;
-    padding: 64px 0 96px 0;
+    margin: 64px auto 96px;
 
     &__form {
         width: 360px;
@@ -55,7 +55,7 @@
         width: 167px;
         height: 50px;
         border: none;
-    
+
         &::after {
             content: url(../img/arrow.svg);
             padding-left: 20px;
@@ -63,7 +63,7 @@
     }
 
     &__promo {
-        @include font (24px, 29px, 300);     
+        @include font (24px, 29px, 300);
     }
 
     &__title {
@@ -73,14 +73,42 @@
 
     &__list {
         margin-top: 21px;
+        list-style-image: url(../img/V.svg);
+        margin-left: 28px;
     }
 
     &__item {
         margin-bottom: 16px;
+        padding-left: 20px;
+    }
+}
 
-            &::before {
-                content: url(../img/V.svg);
-                padding-right: 22px;
-            }
+@media (max-width: 1140px) {
+    .registration {
+        margin: 40px 16px 96px;
+        
+        &__form {
+            margin-right: 22px;
+        }
+
+        &__promo {
+            @include font (16px, 19px, 300);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .registration {
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 8px 96px;
+
+        &__promo {
+            margin-top: 40px;
+        }
+
+        &__form {
+            margin: auto;
+        }
     }
 }
