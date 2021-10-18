@@ -4,6 +4,7 @@
     &__container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     &__img {
@@ -14,9 +15,7 @@
 
     &__title {
         margin-left: 92px;
-        font-size: 48px;
-        font-weight: 900;
-        line-height: 58px;
+        @include font (48px, 58px, 900);
         text-transform: uppercase;
         position: relative;
 
@@ -43,5 +42,59 @@
         font-size: 37px;
         font-weight: 700;
         line-height: 44px; 
+    }
+}
+
+@media (max-width: 1140px) {
+    .hero {
+           
+        &__img {
+            margin-left: 0;
+            width: 386px;
+            height: 368px;
+        }
+    
+        &__title {
+            margin-left: 67px;
+            @include font (44px, 53px, 900);
+            margin-right: 32px;
+        }
+
+        &__subtitle {
+            @include font (24px, 29px, 700);
+        }
+
+        &__pink {
+            @include font (24px, 29px, 700);
+        }
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .hero {
+           
+        &__img {
+            display: none;
+        }
+
+        &__container {
+            height: 363px;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+
+        &__title {
+            margin-left: 67px;
+            @include font (38px, 46px, 900);
+        }
+
+        &__subtitle {
+            @include font (20px, 24px, 700);
+        }
+
+        &__pink {
+            @include font (20px, 24px, 700);
+        }
     }
 }

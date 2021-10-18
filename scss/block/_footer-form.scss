@@ -1,0 +1,57 @@
+.footer-form {
+
+    &__title {
+        @include font (24px, 38px, 700);
+        text-transform: uppercase;
+        height: 61px;
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        display: block;
+        @include font (18px, 30px, 400);
+    }
+
+    &__email {
+        width: 254px;
+        height: 49px;
+        border-radius: 25px 0 0 25px;
+        border: none;
+        padding-left: 22px;
+        background: #E1E1E1;
+        box-sizing: border-box;
+    }
+
+    &__button {
+        width: 100px;
+        height: 49px;
+        border-radius: 0 25px 25px 0;
+        border: none;
+        background: #E05C6E;
+        text-align: center;
+        margin-left: -3px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-form {
+
+        &__email {
+            width: 223px;
+            height: 47px;
+        }
+
+        &__button {
+            width: 90px;
+            height: 47px;
+        }
+
+        &__title {
+            @include font (24px, 37px, 700);
+        }
+    
+        &__subtitle {
+            @include font (14px, 22px, 400);
+        }
+    }
+}

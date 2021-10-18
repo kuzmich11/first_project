@@ -61,3 +61,34 @@
         align-items: center;
     }
 }
+
+@media (max-width: 1140px) {
+    .sale {
+        margin-top: 0;
+
+        &__item {
+            width: 232px;
+            height: 168px;
+            margin-top: 20px;
+        }
+
+        &__accesories {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .sale {
+        
+        &__item, &__accesories {
+            height: 247px;
+            width: 343px;
+            margin: 0 8px 32px 8px;
+        }
+
+        &__list {
+            justify-content: center;
+        }
+    }
+}

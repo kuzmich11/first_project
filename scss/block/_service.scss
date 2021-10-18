@@ -2,7 +2,7 @@
     background-color: $black;
 
     &__list {
-        height: 341px;
+        min-height: 341px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -32,5 +32,25 @@
         font-weight: 300;
         line-height: 17px;
         color: $dark-white;
+    }
+}
+
+@media (max-width: 1140px) {
+    .service {
+       
+        &__list {
+            flex-direction: column;
+            padding-top: 48px;
+            padding-bottom: 64px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .service {
+       
+        &__list {
+            padding-bottom: 81px;
+        }
     }
 }
