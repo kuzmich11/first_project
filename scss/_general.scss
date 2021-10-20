@@ -1,7 +1,7 @@
 
 body {
-    background-color: var(--white);
-    font-family: Lato;
+    background-color: $white;
+    font-family: 'lato', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -23,6 +23,12 @@ body {
 }
 
 @media (max-width: 1140px) {
+    .container {
+        margin: 0 16px;
+    }
+}
+
+@media (max-width: 767px) {
     .container {
         margin: 0 8px;
     }

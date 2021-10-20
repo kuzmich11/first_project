@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -109,48 +109,46 @@
     <main>
         <section class="heading">
             <div class="heading__container container">
-            <h1 class="heading__title">
-                registration
-            </h1>
+                <h1 class="heading__title">
+                    shopping cart
+                </h1>
             </div>
         </section>
-        <section class="registration container">
-            <h2 class="visually-hidden">Registration</h2>
-            <form class="registration__form" action="">
-                <fieldset>
-                    <legend class="registration__text">Your Name</legend>
-                    <label for="first_name" class="visually-hidden">First Name</label>
-                    <input class="registration__input" type="text" id="first_name" placeholder="First Name">
-                    <label for="last_name" class="visually-hidden">Last Name</label>
-                    <input class="registration__input" type="text" id="last_name" placeholder="Last Name">
-                    <div class="registration__gender">
-                        <input class="registration__gender-radio" type="radio" id="male" name="gender">
-                        <label class="registration__gender-lable" for="mail">Mail</label>
-                        <input class="registration__gender-radio" type="radio" id="famale" name="gender">
-                        <label class="registration__gender-lable" for="famale">Famale</label>
+        <section class="cart container">
+            <div class="cart__product">
+                <div class="cart__card">
+                    <img class="cart__img" src="img/shorts_man.jpg" alt="product">
+                    <div class="cart__description">
+                        <h2 class="cart__title">mango  people  t-shirt</h2>
+                        <ul class="cart__list">
+                            <li class="cart__item">Price: <span class="cart__price">$300</span></li>
+                            <li class="cart__item">Color: Red</li>
+                            <li class="cart__item">Size: Xl	</li>
+                            <li class="cart__item cart__item_quantity">Quantity:	</li>
+                        </ul>
                     </div>
-                    <legend class="registration__text">Login details</legend>
-                    <label for="email" class="visually-hidden">Email</label>
-                    <input class="registration__input" type="email" id="email" placeholder="Email">
-                    <label for="password" class="visually-hidden">Password</label>
-                    <input class="registration__input" type="password" id="password" placeholder="Password">
-                    <p class="registration__hint">Please use 8 or more characters, with at least 1 number and a mixture
-                        of uppercase and lowercase
-                        letters</p>
-                    <button type="submit" class="registration__button">join now</button>
-                </fieldset>
-            </form>
-            <div class="registration__promo">
-                <h3 class="registration__title">loyalty has its perks</h3>
-                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting
-                    with these as soon as you join:</p>
-                <ul class="registration__list">
-                    <li class="registration__item">15% off welcome offer</li>
-                    <li class="registration__item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="registration__item">$10 off a purchase on your birthday</li>
-                    <li class="registration__item">Early access to products</li>
-                    <li class="registration__item">Exclusive offers & rewards</li>
-                </ul>
+                    <img class="cart__exit" src="img/X.svg" alt="exit">
+                </div>
+                <div class="cart__card">
+                    <img class="cart__img" src="img/black_man.jpg" alt="product">
+                    <div class="cart__description">
+                        <h2 class="cart__title">mango  people  t-shirt</h2>
+                        <ul class="cart__list">
+                            <li class="cart__item">Price: <span class="cart__price">$300</span></li>
+                            <li class="cart__item">Color: Red</li>
+                            <li class="cart__item">Size: Xl	</li>
+                            <li class="cart__item cart__item_quantity">Quantity:	</li>
+                        </ul>
+                    </div>
+                    <img class="cart__exit" src="img/X.svg" alt="exit">
+                </div>
+                <div class="cart__block-button">
+                    <button class="cart__button" type="reset">clear shopping cart</button>
+                    <a href="index.html" class="cart__button">continue shopping</a>
+                </div>
+            </div>
+            <div class="cart__info">
+
             </div>
         </section>
     </main>
