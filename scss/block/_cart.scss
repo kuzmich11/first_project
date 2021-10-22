@@ -1,8 +1,9 @@
 .cart {
-    margin: 96px auto 128px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &__cart-container {
+        margin: 96px auto 128px;
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__card {
         display: flex;
@@ -31,6 +32,7 @@
 
     &__list {
         @include font(22px, 27px, 400);
+        color: #575757;
     }
 
     &__item {
@@ -43,6 +45,7 @@
                 border: 1px solid #EAEAEA;
                 margin-left: 25px;
                 padding: 1px 16px;
+                @include font(18px, 22px, 400);
             }
         }
     }
@@ -59,7 +62,7 @@
 
     &__block-button {
         display: flex;
-        justify-content: space-between;  
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -73,8 +76,201 @@
         width: 235px;
         height: 50px;
         margin-top: 32px;
+        margin-bottom: 64px;
         text-decoration: none;
         color: #000000;
+
+        &_form {
+            width: 100px;
+            height: 34px;
+            @include font (11px, 13px, 300);
+            margin-top: 3px;
+            margin-bottom: 20px;
+            color: #4A4A4A;
+        }
+
+        &:hover {
+            background-color: $pink;
+            color: #ffffff;
+        }
+
+        &:focus {
+            background-color: $pink;
+            color: #ffffff;
+        }
+
+        &:active {
+            background-color: $pink;
+            color: #ffffff;
+        }
     }
 
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: flex-start;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-title {
+        text-transform: uppercase;
+        @include font (16px, 19px, 300);
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        width: 360px;
+        height: 45px;
+        border: 1px solid #A4A4A4;
+        margin-bottom: 21px;
+        padding-left: 16px;
+        @include font (13px, 16px, 300);
+        box-sizing: border-box;
+    }
+
+    &__total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 360px;
+        height: 214px;
+        background: #F5F3F3;
+        padding: 39px 42px 42px;
+        box-sizing: border-box;
+        margin: 39px 0 0 15px
+    }
+
+    &__subtext {
+        @include font (11px, 13px, 400);
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        color: #4A4A4A;
+
+        &_price {
+            margin-left: 20px;
+        }
+    }
+
+        &__text {
+            @include font (16px, 19px, 300);
+            text-transform: uppercase;
+            margin-bottom: 21px;
+            color: #222222;
+
+
+            &_price {
+                margin-left: 25px;
+                color: $pink;
+                @include font (16px, 19px, 700);
+            }
+    }
+
+    &__total-button {
+        width: 274px;
+        height: 50px;
+        @include font (16px, 19px, 300);
+        background-color: $pink;
+        border: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        &:hover {
+            background-color: #FFFFFF;
+            color: $pink;
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            background-color: #FFFFFF;
+            color: $pink;
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            background-color: #FFFFFF;
+            color: $pink;
+            outline: 1px solid $pink;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .cart {
+        &__cart-container {
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cart {
+
+        &__cart-container {
+            margin-bottom: 96px;
+        }
+
+        &__card {
+            width: 358px;
+            height: 188px;
+        }
+
+        &__description {
+            padding-top: 13px;
+            padding-left: 17px;
+        }
+
+        &__title {
+            @include font (16px, 19px, 400);
+            text-transform: uppercase;
+            width: 140px;
+            height: 36px;
+            margin-bottom: 25px;
+        }
+
+        &__list {
+            @include font(14px, 17px, 400);
+        }
+
+        &__item {
+            margin-bottom: 4px;
+
+            &_quantity {
+
+                &::after {
+                    content: '2';
+                    border: 1px solid #EAEAEA;
+                    margin-left: 15px;
+                    padding: 1px 9px;
+                    @include font(10px, 12px, 400);
+                }
+            }
+        }
+
+        &__exit {
+            width: 10px;
+            height: 10px;
+            margin: 17px 12px auto auto;
+        }
+
+        &__button {
+            width: 174px;
+            height: 32px;
+            @include font (12px, 14px, 400);
+        }
+
+        &__info {
+            justify-content: center;
+        }
+
+        &__total {
+            margin: 29px 0 0 0;
+        }
+    }
 }

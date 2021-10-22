@@ -23,6 +23,18 @@
 
     &__link {
         text-decoration: none;
+
+        &:hover {
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            outline: 1px solid $pink;
+        }
     }
 
     &__text {
@@ -40,6 +52,7 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
+        text-align: center;
     }
 
     &__men {

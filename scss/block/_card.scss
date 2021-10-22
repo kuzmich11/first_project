@@ -7,6 +7,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 130px;
+    padding: 0 24px;
 
     &__text {
         @include font (14px, 17px, 300);
@@ -35,7 +36,8 @@
     }
 
     &__subtext {
-        width: 555px;
+        max-width: 555px;
+        padding: 0 24px;
         @include font (14px, 17px, 300);
         color: #5E5E5E;
         text-align: center;
@@ -46,7 +48,7 @@
         @include font (24px, 29px, 300);
         color: #EF5B70;
         margin-top: 32px;
-        margin-bottom: 49px;
+        margin-bottom: 33px;
     }
 
     &__line {
@@ -59,10 +61,11 @@
         color: $black;
         border: none;
         text-transform: uppercase;
+        @include font (14px, 17px, 400)
     }
 
     &__list {
-        margin-top: 49px;
+        margin-top: 33px;
     }
 
     &__button {
@@ -73,6 +76,41 @@
         border: 1px solid #FF6A6A;
         background-color: transparent;
         color: #FF6A6A;
-        margin-top: 40px;    
+        margin-top: 40px;
+        
+        &:hover {
+            background-color: $pink;
+            color: #FFFFFF;
+        }
+
+        &:focus {
+            background-color: $pink;
+            color: #FFFFFF;
+        }
+
+        &:active {
+            background-color: $pink;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (max-width: 1140px){
+    .card {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        margin-top: 0;
+
+        &__dropdowns {
+            @include font (10px, 12px, 400)
+        }
+
+        &__line {
+            width: 175px;
+        }
     }
 }

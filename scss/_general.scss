@@ -10,6 +10,7 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0;
 }
 .visually-hidden {
     position: absolute;
@@ -24,12 +25,14 @@ body {
 
 @media (max-width: 1140px) {
     .container {
+        width: auto;
         margin: 0 16px;
     }
 }
 
 @media (max-width: 767px) {
     .container {
+        width: auto;
         margin: 0 8px;
     }
 }

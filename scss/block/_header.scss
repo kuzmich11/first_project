@@ -8,24 +8,53 @@
         align-items: center;
         min-height: 75px;
     }
-
+    &__box-logo {
+        display: flex;
+    }
     &__logo-icon {
         width: 44px;
         height: 38px;
-        margin: 0 41px 0 0;  
-    }
+        margin: 0 41px 0 0;
 
+        &:hover,:focus,:active {
+            background-color: $pink;
+        }
+    }
+    &__form {
+        position: relative;
+    }
+    &__search {
+        background-color: inherit;
+        border: none;
+        color: $white;
+        width: 200px;
+        height: 30px;
+        padding: 2px 10px 2px 40px;
+    }
     &__search-icon {
-        width: 26px;
-        height: 26px;
+        width: 40px;
+        height: 30px;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        background-color: inherit;
+        border: none;
+
+        &:hover,:focus,:active {
+            background-color: $pink;
+        }
     }
 
     &__burger-icon {
-        width: 32px;
-        height: 23px;
+        width: 40px;
+        height: 30px;
         margin: 0 33px 0 0;
         border: none;
         background-color: transparent;
+
+        &:hover,:focus,:active {
+            background-color: $pink;
+        }
 
         &:focus +.header-menu {
             display: block;
@@ -36,11 +65,19 @@
         width: 29px;
         height: 29px;
         margin: 0 33px 0 0;
+
+        &:hover,:focus,:active {
+            background-color: $pink;
+        }
     }
 
     &__cart-icon {
         width: 32px;
         height: 29px;
+
+        &:hover,:focus,:active {
+            background-color: $pink;
+        }
     }
 }
 
@@ -93,6 +130,9 @@
 
         &__box-logo {
             margin-left: 8px;
+        }
+        &__search {
+            width: 150px;
         }
 
         &__box-menu {

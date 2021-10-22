@@ -17,7 +17,13 @@
                 <a href="./index.html">
                     <img class="header__logo-icon" src="img/logo.svg" alt="logo">
                 </a>
-                <img class="header__search-icon" src="img/loupe.svg" alt="loupe">
+                <form class="header__form" action="">
+                    <label class="visually-hidden" for="seacrh">search</label>
+                    <input class="header__search" type="search" id="search">
+                    <button type="submit" class="header__search-icon">
+                        <img src="img/loupe.svg" alt="loupe">
+                    </button>
+                </form>
             </div>
             <div class="header__box-menu">
                 <button type="button" class="header__burger-icon">
@@ -100,7 +106,7 @@
                 <a href="./registration.html">
                     <img class="header__profile-icon" src="img/profile.svg" alt="profile">
                 </a>
-                <a href="#">
+                <a href="cart.html">
                     <img class="header__cart-icon" src="img/cart.svg" alt="cart">
                 </a>
             </div>
@@ -125,7 +131,7 @@
                     <input class="registration__input" type="text" id="last_name" placeholder="Last Name">
                     <div class="registration__gender">
                         <input class="registration__gender-radio" type="radio" id="male" name="gender">
-                        <label class="registration__gender-lable" for="mail">Mail</label>
+                        <label class="registration__gender-lable" for="male">Male</label>
                         <input class="registration__gender-radio" type="radio" id="famale" name="gender">
                         <label class="registration__gender-lable" for="famale">Famale</label>
                     </div>
