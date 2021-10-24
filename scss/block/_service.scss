@@ -17,6 +17,18 @@
     &__img {
         width: 45px;
         height: 32px;
+
+        &:hover {
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            outline: 1px solid $pink;
+        }
     }
 
     &__subtitle {

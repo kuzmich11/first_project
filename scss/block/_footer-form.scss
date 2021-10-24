@@ -20,6 +20,16 @@
         padding-left: 22px;
         background: #E1E1E1;
         box-sizing: border-box;
+
+        &:hover {
+            border: 1px solid $pink;
+            border-style: outset;
+        }
+
+        &:focus {
+            border: 1px solid $pink;
+            border-style: outset;
+        }
     }
 
     &__button {
@@ -30,6 +40,18 @@
         background: #E05C6E;
         text-align: center;
         margin-left: -3px;
+
+        &:hover {
+            background-color: $pink;
+        }
+
+        &:focus {
+            background-color: $pink;
+        }
+
+        &:active {
+            background-color: $pink;
+        }
     }
 }
 

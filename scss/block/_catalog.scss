@@ -31,6 +31,19 @@
         background-color: #F8F8F8;
         margin-bottom: 30px;
         position: relative;
+        box-sizing: content-box;
+
+        &:hover {
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            outline: 1px solid $pink;
+        }
     }
 
     &__link {
@@ -59,6 +72,18 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        &:hover {
+            border: 1px solid $pink;
+        }
+
+        &:focus {
+            border: 1px solid $pink;
+        }
+
+        &:active {
+            border: 1px solid $pink;
+        }
     }
 
     &__cart {
@@ -129,6 +154,10 @@
 
         &__item {
             margin-bottom: 16px;
+
+            &_hidden {
+                display: none;
+            }
         }
     }
 }
@@ -141,6 +170,10 @@
         &__list {
             margin-top: 65px;
             margin-bottom: 24px;
+        }
+
+        &__item {
+            margin: 16px auto 0;
         }
     }
 }

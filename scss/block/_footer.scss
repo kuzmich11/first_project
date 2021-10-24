@@ -64,9 +64,17 @@
         justify-content: center;
         align-items: center;
 
-            &:hover,:focus {
-                background-color: $pink;
-            }
+        &:hover {
+            background-color: $pink;
+        }
+
+        &:focus {
+            background-color: $pink;
+        }
+
+        &:active {
+            background-color: $pink;
+        }
     }
 }
 

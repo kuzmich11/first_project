@@ -21,6 +21,18 @@
         border: 1px solid #A4A4A4;
         margin-top: 20px;
         box-sizing: border-box;
+
+        &:hover {
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            outline: 1px solid $pink;
+        }
     }
 
     &__gender {
@@ -32,6 +44,18 @@
     &__gender-radio {
         width: 17px;
         height: 17px;
+
+        &:hover {
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            outline: 1px solid $pink;
+        }
     }
 
     &__gender-lable {
@@ -59,6 +83,18 @@
         &::after {
             content: url(../img/arrow.svg);
             padding-left: 20px;
+        }
+
+        &:hover {
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            outline: 1px solid $pink;
         }
     }
 

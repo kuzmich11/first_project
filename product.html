@@ -20,7 +20,13 @@
                 <a href="./index.html">
                     <img class="header__logo-icon" src="img/logo.svg" alt="logo">
                 </a>
-                <img class="header__search-icon" src="img/loupe.svg" alt="loupe">
+                <form class="header__form" action="">
+                    <label class="visually-hidden" for="seacrh">search</label>
+                    <input class="header__search" type="search" id="search">
+                    <button type="submit" class="header__search-icon">
+                        <img src="img/loupe.svg" alt="loupe">
+                    </button>
+                </form>
             </div>
             <div class="header__box-menu">
                 <button type="button" class="header__burger-icon">
@@ -103,7 +109,7 @@
                 <a href="./registration.html">
                     <img class="header__profile-icon" src="img/profile.svg" alt="profile">
                 </a>
-                <a href="#">
+                <a href="cart.html">
                     <img class="header__cart-icon" src="img/cart.svg" alt="cart">
                 </a>
             </div>
@@ -115,33 +121,36 @@
                 <h1 class="heading__title">
                     new arrivals
                 </h1>
-                <p class="heading__navigation"><a class="heading__link" href="index.html">home</a>&nbsp;/&nbsp;<a class="heading__link" href="#">men</a>&nbsp;/&nbsp;new&nbsp;arrivals</p>
+                <p class="heading__navigation"><a class="heading__link" href="index.html">home</a>&nbsp;/&nbsp;<a
+                        class="heading__link" href="#">men</a>&nbsp;/&nbsp;new&nbsp;arrivals</p>
             </div>
         </section>
-        <h2 class="visually-hidden">slider</h2>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/image_slide.jpg" class="d-block w-100" alt="...">
+        <section>
+            <h2 class="visually-hidden">slider</h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/image_slide.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/image_slide.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/image_slide.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/image_slide.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/image_slide.jpg" class="d-block w-100" alt="...">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </section>
         <section class="card container">
             <p class="card__text">women collection</p>
             <h2 class="card__title">moschino cheap and chic</h2>
@@ -233,7 +242,7 @@
                         <p class="catalog__price">$52.00</p>
                     </a>
                 </li>
-                <li class="catalog__item">
+                <li class="catalog__item catalog__item_hidden">
                     <img class="catalog__img" src="img/shorts_man.jpg" alt="shorts">
                     <div class="catalog__alt-img">
                         <button class="catalog__add-cart">
