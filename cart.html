@@ -17,8 +17,8 @@
                 <a href="./index.html">
                     <img class="header__logo-icon" src="img/logo.svg" alt="logo">
                 </a>
-                <form class="header__form" action="">
-                    <label class="visually-hidden" for="seacrh">search</label>
+                <form class="header__form" action="#">
+                    <label class="visually-hidden" for="search">search</label>
                     <input class="header__search" type="search" id="search">
                     <button type="submit" class="header__search-icon">
                         <img src="img/loupe.svg" alt="loupe">
@@ -30,16 +30,16 @@
                     <img src="img/burger.svg" alt="menu">
                 </button>
                 <nav class="header__menu header-menu">
-                    <button class="header-menu__exit" tipe="button">
+                    <button class="header-menu__exit" type="button">
                         <img src="img/X.svg" alt="exit">
                     </button>
                     <ul class="header-menu__list">
-                        <h2 class="header-menu__title">
-                            menu
-                        </h2>
                         <li class="header-menu__item header-submenu">
+                            <h2 class="header-menu__title">
+                                menu
+                            </h2>
+                            <h3 class="header-submenu__title">man</h3>
                             <ul class="header-submenu__list">
-                                <h3 class="header-submenu__title">man</h3>
                                 <li class="header-submenu__item">
                                     <a class="header-submenu__link" href=" #">Accessories</a>
                                 </li>
@@ -55,10 +55,10 @@
                             </ul>
                         </li>
                         <li class="header-menu__item header-submenu">
+                            <h3 class="header-submenu__title">
+                                woman
+                            </h3>
                             <ul class="header-submenu__list">
-                                <h3 class="header-submenu__title">
-                                    woman
-                                </h3>
                                 <li class="header-submenu__item">
                                     <a class="header-submenu__link" href=" #">Accessories</a>
                                 </li>
@@ -77,10 +77,10 @@
                             </ul>
                         </li>
                         <li class="header-menu__item header-submenu">
+                            <h3 class="header-submenu__title">
+                                kids
+                            </h3>
                             <ul class="header-submenu__list">
-                                <h3 class="header-submenu__title">
-                                    kids
-                                </h3>
                                 <li class="header-submenu__item">
                                     <a class="header-submenu__link" href=" #">Accessories</a>
                                 </li>
@@ -129,12 +129,12 @@
                     <div class="cart__card">
                         <img class="cart__img" src="img/shorts_man.jpg" alt="product">
                         <div class="cart__description">
-                            <h3 class="cart__title">mango  people  t-shirt</h3>
+                            <h3 class="cart__title">mango people t-shirt</h3>
                             <ul class="cart__list">
                                 <li class="cart__item">Price: <span class="cart__price">$300</span></li>
                                 <li class="cart__item">Color: Red</li>
-                                <li class="cart__item">Size: Xl	</li>
-                                <li class="cart__item cart__item_quantity">Quantity:	</li>
+                                <li class="cart__item">Size: Xl </li>
+                                <li class="cart__item cart__item_quantity">Quantity: </li>
                             </ul>
                         </div>
                         <img class="cart__exit" src="img/X.svg" alt="exit">
@@ -142,12 +142,12 @@
                     <div class="cart__card">
                         <img class="cart__img" src="img/black_man.jpg" alt="product">
                         <div class="cart__description">
-                            <h3 class="cart__title">mango  people  t-shirt</h3>
+                            <h3 class="cart__title">mango people t-shirt</h3>
                             <ul class="cart__list">
                                 <li class="cart__item">Price: <span class="cart__price">$300</span></li>
                                 <li class="cart__item">Color: Red</li>
-                                <li class="cart__item">Size: Xl	</li>
-                                <li class="cart__item cart__item_quantity">Quantity:	</li>
+                                <li class="cart__item">Size: Xl </li>
+                                <li class="cart__item cart__item_quantity">Quantity: </li>
                             </ul>
                         </div>
                         <img class="cart__exit" src="img/X.svg" alt="exit">
@@ -158,24 +158,26 @@
                     </div>
                 </div>
                 <div class="cart__info">
-                    <form class="cart__form" action="">
-                        <legend class="cart__form-title">
-                            shipping adress
-                        </legend>
-                        <label for="country" class="visually-hidden">country</label>
-                        <input type="text" class="cart__input" id="country" placeholder="Bangladesh">
-                        <label for="state" class="visually-hidden">state</label>
-                        <input type="text" class="cart__input" id="state" placeholder="State">
-                        <label for="postcode" class="visually-hidden">postcode</label>
-                        <input type="text" class="cart__input" id="postcode" placeholder="Postcode / Zip">
-                        <button class="cart__button cart__button_form">get a quote</button>
+                    <form action="#">
+                        <fieldset class="cart__form">
+                            <legend class="cart__form-title">
+                                shipping adress
+                            </legend>
+                            <label for="country" class="visually-hidden">country</label>
+                            <input type="text" class="cart__input" id="country" placeholder="Bangladesh">
+                            <label for="state" class="visually-hidden">state</label>
+                            <input type="text" class="cart__input" id="state" placeholder="State">
+                            <label for="postcode" class="visually-hidden">postcode</label>
+                            <input type="text" class="cart__input" id="postcode" placeholder="Postcode / Zip">
+                            <button class="cart__button cart__button_form">get a quote</button>
+                        </fieldset>
                     </form>
                     <div class="cart__total">
                         <p class="cart__subtext">
                             sub total <span class="cart__subtext cart__subtext_price">$900</span>
                         </p>
                         <p class="cart__text">
-                            grand total <span class="cart__text cart__text_price">$900</span> 
+                            grand total <span class="cart__text cart__text_price">$900</span>
                         </p>
                         <hr class="cart__line">
                         <button class="cart__total-button">
@@ -187,7 +189,7 @@
         </section>
     </main>
     <footer class="footer">
-        <section class="footer__subscribe subscribe">
+        <section class="footer__subscribe">
             <h2 class="visually-hidden">subscribe</h2>
             <div class="container footer__subscribe-container">
                 <div class="footer__figure">
@@ -197,13 +199,13 @@
                             purus condimentum“</span>
                     </p>
                 </div>
-                <form class="footer__form footer-form" action="">
+                <form class="footer__form footer-form" action="#">
                     <fieldset>
                         <legend class="footer-form__title">subscribe
                             <span class="footer-form__subtitle"> for our newletter and promotion</span>
                         </legend>
                         <input class="footer-form__email" type="email" required placeholder="Enter Your Email">
-                        <button class="footer-form__button" type="submit" class="button">Subscribe</button>
+                        <button class="footer-form__button" type="submit">Subscribe</button>
                     </fieldset>
                 </form>
             </div>
