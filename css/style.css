@@ -211,7 +211,7 @@ body {
 }
 
 .header__cart-contain {
-  display: block;
+  display: none;
   min-width: 300px;
   min-height: 50px;
   top: 50px;
