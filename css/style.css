@@ -117,7 +117,9 @@ body {
   margin: 0 41px 0 0;
 }
 
-.header__logo-icon:hover, .header__logo-icon :focus, .header__logo-icon :active {
+.header__logo-icon:hover,
+.header__logo-icon :focus,
+.header__logo-icon :active {
   background-color: #F16D7F;
 }
 
@@ -144,7 +146,9 @@ body {
   border: none;
 }
 
-.header__search-icon:hover, .header__search-icon :focus, .header__search-icon :active {
+.header__search-icon:hover,
+.header__search-icon :focus,
+.header__search-icon :active {
   background-color: #F16D7F;
 }
 
@@ -156,7 +160,9 @@ body {
   background-color: transparent;
 }
 
-.header__burger-icon:hover, .header__burger-icon :focus, .header__burger-icon :active {
+.header__burger-icon:hover,
+.header__burger-icon :focus,
+.header__burger-icon :active {
   background-color: #F16D7F;
 }
 
@@ -170,17 +176,87 @@ body {
   margin: 0 33px 0 0;
 }
 
-.header__profile-icon:hover, .header__profile-icon :focus, .header__profile-icon :active {
+.header__profile-icon:hover,
+.header__profile-icon :focus,
+.header__profile-icon :active {
   background-color: #F16D7F;
 }
 
 .header__cart-icon {
   width: 32px;
   height: 29px;
+  position: relative;
 }
 
-.header__cart-icon:hover, .header__cart-icon :focus, .header__cart-icon :active {
+.header__cart-icon:hover,
+.header__cart-icon :focus,
+.header__cart-icon :active {
   background-color: #F16D7F;
+}
+
+.header__cart-count {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  color: #FFFFFF;
+  background: #f16d7f;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  right: -8px;
+  top: -10px;
+  font-size: 12px;
+  line-height: 19px;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.header__cart-contain {
+  display: block;
+  min-width: 300px;
+  min-height: 50px;
+  top: 50px;
+  right: 0px;
+  background-color: #FFFFFF;
+  position: absolute;
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.header__cart-product {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.header__cart-name {
+  width: 200px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.header__cart-number {
+  width: 20px;
+  padding-right: 10px;
+}
+
+.header__cart-price {
+  width: 50px;
+  padding-right: 10px;
+}
+
+.header__cart-sum {
+  width: 60px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.header__cart-total {
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: right;
 }
 
 .header-menu {
